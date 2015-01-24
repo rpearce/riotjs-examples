@@ -1,0 +1,15 @@
+{
+  "name": "post-riotjs",
+  "version": "0.0.1",
+  "description": "",
+  "author": "Robert Pearce",
+  "devDependencies": {
+    "node-sass": "^2.0.0-beta",
+    "riot": "^2.0.1"
+  },
+  "scripts": {
+    "watch:sass": "sass --watch src/sass/app.scss:build/app.css",
+    "watch:riot": "riot -w src/ build/"
+  },
+  "private": true
+}
