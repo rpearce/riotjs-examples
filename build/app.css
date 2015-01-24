@@ -35,14 +35,6 @@ body {
   .listing__item:last-of-type {
     border-right: none; }
 
-.listing__divider {
-  display: inline-block;
-  vertical-align: middle;
-  margin: 0 10px;
-  width: 0;
-  height: 60px;
-  border-left: 1px solid white; }
-
 .listing__author {
   display: inline-block;
   vertical-align: middle;
