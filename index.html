@@ -4,17 +4,25 @@
     <link rel="stylesheet" href="build/app.css" />
   </head>
   <body>
-    <posts></posts>
+    <div class="tabsContainer">
+      <tabs></tabs>
+    </div>
+
+    <div class="postsContainer">
+      <posts></posts>
+    </div>
 
     <script src="lib/riot-2.0.1.js"></script>
+    <script src="build/tags/tabs.js"></script>
     <script src="build/tags/posts.js"></script>
     <script>
+      riot.mount('tabs');
       riot.mount('posts', {
         posts: [
           { user: { name: 'Robert Pearce', avatar: 'https://avatars1.githubusercontent.com/u/592876?v=3&s=460' }, departureDate: 'Aug 25', returnDate: 'Sept 1', locations: ['Charleston, SC', 'Washington, DC'] },
           { user: { name: 'Chief Pearce', avatar: 'https://avatars1.githubusercontent.com/u/592876?v=3&s=460' }, departureDate: 'Jan 2', returnDate: 'Jan 5', locations: ['Columbus, OH', 'Dayton, OH', 'Indianapolis, IN'] }
         ]
-      })
+      });
     </script>
   </body>
 </html>

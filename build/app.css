@@ -2,23 +2,56 @@
   box-sizing: border-box; }
 
 body {
-  background-color: #82d0c9;
-  color: white;
   font-size: 16px;
   font-family: Helvetica;
   line-height: 1.5;
-  font-weight: 300; }
+  font-weight: 300;
+  margin: 0;
+  padding: 0; }
 
 .list--bare, .post__locations, .listing__comments {
   list-style: none;
   margin: 0;
   padding: 0; }
 
+.tabsContainer {
+  padding: 100px 0;
+  background-color: #E5FAF9;
+  color: #34918A; }
+
+tabs {
+  display: block;
+  width: 400px;
+  margin: 0 auto; }
+
+.tab {
+  display: inline-block;
+  vertical-align: middle;
+  width: 75px;
+  height: 45px;
+  line-height: 45px;
+  text-align: center;
+  cursor: pointer;
+  border: 1px solid; }
+
+.tabContent__item {
+  display: none; }
+  .tabContent__item.is-active {
+    display: block; }
+
+.postsContainer {
+  padding: 100px 0;
+  background-color: #82D0CA;
+  color: #FFF; }
+
+posts {
+  display: block; }
+
 .listing {
   margin: 50px auto;
   width: 280px;
   padding: 15px 0;
-  border: 2px solid white;
+  border: 2px solid #FFF;
   margin-bottom: 25px;
   font-size: 0; }
 
@@ -29,7 +62,7 @@ body {
   width: 33.333333%;
   text-align: center;
   cursor: pointer;
-  border-right: 1px solid white; }
+  border-right: 1px solid #FFF; }
   .listing__item.is-inactive {
     opacity: 0.4; }
   .listing__item:last-of-type {
@@ -69,7 +102,7 @@ body {
     content: "";
     position: absolute;
     left: 12px;
-    border-left: 1px solid white;
+    border-left: 1px solid #FFF;
     height: 100%;
     width: 1px; }
   .post__location--start:after,
@@ -89,7 +122,7 @@ body {
     position: absolute;
     top: 6px;
     left: 12px;
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid #FFF;
     width: 6px;
     height: 1px; }
 
@@ -104,15 +137,15 @@ body {
   background-color: #82d0c9; }
 
 .post__location--start:after {
-  border-color: white;
+  border-color: #FFF;
   top: 0; }
 
 .post__location--stop:after {
-  border-color: white;
+  border-color: #FFF;
   bottom: 0; }
 
 .listing__comments {
-  border-top: 1px solid white;
+  border-top: 1px solid #FFF;
   margin-top: 20px; }
   .listing__comments > li {
     margin-top: 15px; }
@@ -130,7 +163,7 @@ body {
 
 .listing__infoContact {
   margin-top: 10px;
-  border: 1px solid white;
+  border: 1px solid #FFF;
   display: inline-block;
   padding: 5px 10px; }
 

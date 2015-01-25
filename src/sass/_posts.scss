@@ -1,0 +1,154 @@
+.postsContainer {
+  padding: 100px 0;
+  background-color: #82D0CA;
+  color: #FFF;
+}
+
+posts {
+  display: block;
+}
+
+.listing {
+  margin: 50px auto;
+  width: 280px;
+  padding: 15px 0;
+  border: 2px solid #FFF;
+  margin-bottom: 25px;
+  font-size: 0;
+}
+
+.listing__item {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 1.25rem;
+  width: 33.333333%;
+  text-align: center;
+  cursor: pointer;
+  border-right: 1px solid #FFF;
+  &.is-inactive {
+    opacity: 0.4;
+  }
+  &:last-of-type {
+    border-right: none;
+  }
+}
+
+.listing__author {
+  display: inline-block;
+  vertical-align: middle;
+  cursor: pointer;
+  img {
+    display: inline-block;
+    vertical-align: middle;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+  }
+}
+
+.listing__info {
+  padding-top: 20px;
+  height: 0;
+  visibility: hidden;
+  position: absolute;
+  transition: all 0.3s ease-in-out;
+  .is-active & {
+    height: auto;
+    visibility: visible;
+    position: relative;
+  }
+}
+
+.post__locations {
+  @extend .list--bare;
+}
+
+.post__location--start,
+.post__location--via,
+.post__location--stop {
+  position: relative;
+  padding-left: 32px;
+  line-height: 1;
+  &:before {
+    content: "";
+    position: absolute;
+    left: 12px;
+    border-left: 1px solid #FFF;
+    height: 100%;
+    width: 1px;
+  }
+  &:after {
+    position: absolute;
+    left: 5px;
+  }
+}
+
+.post__location--start,
+.post__location--via {
+  padding-bottom: 15px;
+}
+
+.post__location--via {
+  font-size: 0.813rem;
+  &:after {
+    content: "";
+    position: absolute;
+    top: 6px;
+    left: 12px;
+    border-bottom: 1px solid #FFF;
+    width: 6px;
+    height: 1px;
+  }
+}
+
+.post__location--start:after,
+.post__location--stop:after {
+  content: "";
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  border-width: 2px;
+  border-style: solid;
+  background-color: rgb(130, 208, 201);
+}
+
+.post__location--start:after {
+  border-color: #FFF;
+  top: 0;
+}
+
+.post__location--stop:after {
+  border-color: #FFF;
+  bottom: 0;
+}
+
+.listing__comments {
+  @extend .list--bare;
+  border-top: 1px solid #FFF;
+  margin-top: 20px;
+  > li {
+    margin-top: 15px;
+  }
+  img, span {
+    display: inline-block;
+    vertical-align: top;
+  }
+  img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+  }
+  span {
+    padding-top: 3px;
+    padding-left: 5px;
+    width: 200px;
+  }
+}
+
+.listing__infoContact {
+  margin-top: 10px;
+  border: 1px solid #FFF;
+  display: inline-block;
+  padding: 5px 10px;
+}
+

@@ -1,0 +1,29 @@
+.tabsContainer {
+  padding: 100px 0;
+  background-color: #E5FAF9;
+  color: #34918A;
+}
+
+tabs {
+  display: block;
+  width: 400px;
+  margin: 0 auto;
+}
+
+.tab {
+  display: inline-block;
+  vertical-align: middle;
+  width: 75px;
+  height: 45px;
+  line-height: 45px;
+  text-align: center;
+  cursor: pointer;
+  border: 1px solid;
+}
+
+.tabContent__item {
+  display: none;
+  &.is-active {
+    display: block;
+  }
+}
