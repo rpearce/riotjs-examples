@@ -1,18 +1,12 @@
-.postsContainer {
-  padding: 100px 0;
-  background-color: #82D0CA;
-  color: #FFF;
-}
-
 posts {
   display: block;
 }
 
 .listing {
-  margin: 50px auto;
+  margin-bottom: 50px;
   width: 280px;
   padding: 15px 0;
-  border: 2px solid #FFF;
+  border: 1px solid $body-color;
   margin-bottom: 25px;
   font-size: 0;
 }
@@ -24,7 +18,7 @@ posts {
   width: 33.333333%;
   text-align: center;
   cursor: pointer;
-  border-right: 1px solid #FFF;
+  border-right: 1px solid $body-color;
   &.is-inactive {
     opacity: 0.4;
   }
@@ -73,7 +67,7 @@ posts {
     content: "";
     position: absolute;
     left: 12px;
-    border-left: 1px solid #FFF;
+    border-left: 1px solid $body-color;
     height: 100%;
     width: 1px;
   }
@@ -95,7 +89,7 @@ posts {
     position: absolute;
     top: 6px;
     left: 12px;
-    border-bottom: 1px solid #FFF;
+    border-bottom: 1px solid $body-color;
     width: 6px;
     height: 1px;
   }
@@ -113,18 +107,18 @@ posts {
 }
 
 .post__location--start:after {
-  border-color: #FFF;
+  border-color: $body-color;
   top: 0;
 }
 
 .post__location--stop:after {
-  border-color: #FFF;
+  border-color: $body-color;
   bottom: 0;
 }
 
 .listing__comments {
   @extend .list--bare;
-  border-top: 1px solid #FFF;
+  border-top: 1px solid $body-color;
   margin-top: 20px;
   > li {
     margin-top: 15px;
@@ -147,7 +141,7 @@ posts {
 
 .listing__infoContact {
   margin-top: 10px;
-  border: 1px solid #FFF;
+  border: 1px solid $body-color;
   display: inline-block;
   padding: 5px 10px;
 }

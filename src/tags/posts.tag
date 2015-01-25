@@ -1,5 +1,5 @@
 <posts>
-  <h1>Posts</h1>
+  <h2>Ride</h2>
   <post each={ post, i in opts.posts } post={ post }></post>
 </posts>
 

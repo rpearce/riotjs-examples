@@ -1,3 +1,6 @@
+$body-color: #55AFA8;
+$section-bgColor: #E5FAF9;
+
 *, *:before, *:after {
   box-sizing: border-box;
 }
@@ -9,12 +12,33 @@ body {
   font-weight: 300;
   margin: 0;
   padding: 0;
+  color: $body-color
 }
 
 .list--bare {
   list-style: none;
   margin: 0;
   padding: 0;
+}
+
+.section {
+  padding: 75px 0;
+  background-color: $section-bgColor;
+  border-bottom: 1px solid #B4EAE6;
+}
+
+.section--main {
+  @extend .section;
+  background-color: #B4EAE6;
+  color: #55AFA8;
+  h1 {
+    font-size: 3em;
+  }
+}
+
+.layout--constrained {
+  width: 600px;
+  margin: 0 auto;
 }
 
 @import "tabs";

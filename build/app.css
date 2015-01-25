@@ -7,22 +7,31 @@ body {
   line-height: 1.5;
   font-weight: 300;
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  color: #55AFA8; }
 
 .list--bare, .post__locations, .listing__comments {
   list-style: none;
   margin: 0;
   padding: 0; }
 
-.tabsContainer {
-  padding: 100px 0;
+.section, .section--main {
+  padding: 75px 0;
   background-color: #E5FAF9;
-  color: #34918A; }
+  border-bottom: 1px solid #B4EAE6; }
+
+.section--main {
+  background-color: #B4EAE6;
+  color: #55AFA8; }
+  .section--main h1 {
+    font-size: 3em; }
+
+.layout--constrained {
+  width: 600px;
+  margin: 0 auto; }
 
 tabs {
-  display: block;
-  width: 400px;
-  margin: 0 auto; }
+  display: block; }
 
 .tab {
   display: inline-block;
@@ -32,26 +41,30 @@ tabs {
   line-height: 45px;
   text-align: center;
   cursor: pointer;
-  border: 1px solid; }
+  border: 1px solid;
+  background-color: #E5FAF9;
+  margin-bottom: -1px;
+  margin-right: 5px; }
+  .tab.is-active {
+    border-bottom: none; }
+
+.tabContent {
+  border: 1px solid;
+  padding: 20px; }
 
 .tabContent__item {
   display: none; }
   .tabContent__item.is-active {
     display: block; }
 
-.postsContainer {
-  padding: 100px 0;
-  background-color: #82D0CA;
-  color: #FFF; }
-
 posts {
   display: block; }
 
 .listing {
-  margin: 50px auto;
+  margin-bottom: 50px;
   width: 280px;
   padding: 15px 0;
-  border: 2px solid #FFF;
+  border: 1px solid #55AFA8;
   margin-bottom: 25px;
   font-size: 0; }
 
@@ -62,7 +75,7 @@ posts {
   width: 33.333333%;
   text-align: center;
   cursor: pointer;
-  border-right: 1px solid #FFF; }
+  border-right: 1px solid #55AFA8; }
   .listing__item.is-inactive {
     opacity: 0.4; }
   .listing__item:last-of-type {
@@ -102,7 +115,7 @@ posts {
     content: "";
     position: absolute;
     left: 12px;
-    border-left: 1px solid #FFF;
+    border-left: 1px solid #55AFA8;
     height: 100%;
     width: 1px; }
   .post__location--start:after,
@@ -122,7 +135,7 @@ posts {
     position: absolute;
     top: 6px;
     left: 12px;
-    border-bottom: 1px solid #FFF;
+    border-bottom: 1px solid #55AFA8;
     width: 6px;
     height: 1px; }
 
@@ -137,15 +150,15 @@ posts {
   background-color: #82d0c9; }
 
 .post__location--start:after {
-  border-color: #FFF;
+  border-color: #55AFA8;
   top: 0; }
 
 .post__location--stop:after {
-  border-color: #FFF;
+  border-color: #55AFA8;
   bottom: 0; }
 
 .listing__comments {
-  border-top: 1px solid #FFF;
+  border-top: 1px solid #55AFA8;
   margin-top: 20px; }
   .listing__comments > li {
     margin-top: 15px; }
@@ -163,7 +176,7 @@ posts {
 
 .listing__infoContact {
   margin-top: 10px;
-  border: 1px solid #FFF;
+  border: 1px solid #55AFA8;
   display: inline-block;
   padding: 5px 10px; }
 
