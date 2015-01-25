@@ -10,6 +10,12 @@ body {
   padding: 0;
   color: #55AFA8; }
 
+a {
+  color: #438e88;
+  cursor: pointer;
+  text-decoration: none;
+  border-bottom: 1px dotted; }
+
 .list--bare, .post__locations, .listing__comments {
   list-style: none;
   margin: 0;

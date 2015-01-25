@@ -12,7 +12,14 @@ body {
   font-weight: 300;
   margin: 0;
   padding: 0;
-  color: $body-color
+  color: $body-color;
+}
+
+a {
+  color: darken($body-color, 10%);
+  cursor: pointer;
+  text-decoration: none;
+  border-bottom: 1px dotted;
 }
 
 .list--bare {
