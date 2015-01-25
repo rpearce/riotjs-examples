@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <title>Riot 2.0 Examples</title>
     <link rel="stylesheet" href="build/app.css" />
   </head>
   <body>
@@ -15,28 +16,11 @@
     </div>
 
     <div class="section">
-      <div class="layout--constrained">
-        <tabs></tabs>
-      </div>
+      <iframe class="iframe--tabs" src="./tabs.html"></iframe>
     </div>
 
-    <!--<div class="section">-->
-    <!--  <div class="layout--constrained">-->
-    <!--    <posts></posts>-->
-    <!--  </div>-->
-    <!--</div>-->
-
-    <script src="lib/riot-2.0.1.js"></script>
-    <script src="build/tags/tabs.js"></script>
-    <script src="build/tags/posts.js"></script>
-    <script>
-      riot.mount('tabs');
-      riot.mount('posts', {
-        posts: [
-          { user: { name: 'Robert Pearce', avatar: 'https://avatars1.githubusercontent.com/u/592876?v=3&s=460' }, departureDate: 'Aug 25', returnDate: 'Sept 1', locations: ['Charleston, SC', 'Washington, DC'] },
-          { user: { name: 'Chief Pearce', avatar: 'https://avatars1.githubusercontent.com/u/592876?v=3&s=460' }, departureDate: 'Jan 2', returnDate: 'Jan 5', locations: ['Columbus, OH', 'Dayton, OH', 'Indianapolis, IN'] }
-        ]
-      });
-    </script>
+    <div class="section">
+      <iframe class="iframe--posts" src="./posts.html"></iframe>
+    </div>
   </body>
 </html>

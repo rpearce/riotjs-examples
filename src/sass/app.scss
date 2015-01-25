@@ -1,5 +1,4 @@
 $body-color: #55AFA8;
-$section-bgColor: #E5FAF9;
 
 *, *:before, *:after {
   box-sizing: border-box;
@@ -22,6 +21,17 @@ a {
   border-bottom: 1px dotted;
 }
 
+iframe {
+  border: none;
+  width: 100%;
+  &.iframe--tabs {
+    height: 550px;
+  }
+  &.iframe--posts {
+    height: 400px;
+  }
+}
+
 .list--bare {
   list-style: none;
   margin: 0;
@@ -30,7 +40,7 @@ a {
 
 .section {
   padding: 75px 0;
-  background-color: $section-bgColor;
+  background-color: #FFF;
   border-bottom: 1px solid #B4EAE6;
 }
 
@@ -44,7 +54,7 @@ a {
 }
 
 .layout--constrained {
-  width: 600px;
+  width: 400px;
   margin: 0 auto;
 }
 
