@@ -11,7 +11,7 @@ body {
   color: #55AFA8; }
 
 a {
-  color: #438e88;
+  color: #B4EAE6;
   cursor: pointer;
   text-decoration: none;
   border-bottom: 1px dotted; }
@@ -35,8 +35,9 @@ iframe {
   border-bottom: 1px solid #B4EAE6; }
 
 .section--main {
-  background-color: #B4EAE6;
-  color: #55AFA8; }
+  background-color: #55AFA8;
+  color: #FFF;
+  border-bottom: none; }
   .section--main h1 {
     font-size: 3em; }
 

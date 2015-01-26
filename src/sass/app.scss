@@ -15,7 +15,7 @@ body {
 }
 
 a {
-  color: darken($body-color, 10%);
+  color: #B4EAE6;
   cursor: pointer;
   text-decoration: none;
   border-bottom: 1px dotted;
@@ -46,8 +46,9 @@ iframe {
 
 .section--main {
   @extend .section;
-  background-color: #B4EAE6;
-  color: #55AFA8;
+  background-color: $body-color;
+  color: #FFF;
+  border-bottom: none;
   h1 {
     font-size: 3em;
   }
