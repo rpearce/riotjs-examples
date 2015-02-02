@@ -1,9 +1,9 @@
-<posts>
+<riot-posts>
   <h2>Ride</h2>
-  <post each={ post, i in opts.posts } post={ post }></post>
-</posts>
+  <riot-post each={ post, i in opts.posts } post={ post }></riot-post>
+</riot-posts>
 
-<post>
+<riot-post>
   <div class={ listing: true }>
     <div class={ listing__item: true }>
       {opts.post.departureDate}
@@ -19,4 +19,4 @@
       <img src={ opts.post.user.avatar }>
     </div>
   </div>
-</post>
+</riot-post>

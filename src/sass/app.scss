@@ -25,11 +25,14 @@ a {
 iframe {
   border: none;
   width: 100%;
+  &.iframe--posts {
+    height: 400px;
+  }
   &.iframe--tabs {
     height: 550px;
   }
-  &.iframe--posts {
-    height: 400px;
+  &.iframe--typeahead {
+    height: 300px;
   }
 }
 
@@ -60,5 +63,10 @@ iframe {
   margin: 0 auto;
 }
 
-@import "tabs";
+.is-hidden {
+  display: none;
+}
+
 @import "posts";
+@import "tabs";
+@import "typeahead";

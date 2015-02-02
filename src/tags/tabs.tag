@@ -1,10 +1,10 @@
-<tabs>
+<riot-tabs>
   <h2>Tabs</h2>
   <ul class="list--bare">
-    <li each={ tab, i in tabs } class={ tab: true, is-active: parent.isActiveTab(tab.ref) } onclick={ parent.toggleTab }>{tab.title}</li>
+    <li each={ tab, i in tabs } class="tab { is-active: parent.isActiveTab(tab.ref) }" onclick={ parent.toggleTab }>{tab.title}</li>
   </ul>
   <div class="tabContent">
-    <div each={ tab, i in tabs } class={ tabContent__item: true, is-active: parent.isActiveTab(tab.ref) }>{tab.content}</div>
+    <div each={ tab, i in tabs } class="tabContent__item { is-active: parent.isActiveTab(tab.ref) }">{tab.content}</div>
   </div>
 
   this.tabs = [
@@ -23,4 +23,4 @@
     this.activeTab = e.item.tab.ref;
     return true;
   }
-</tabs>
+</riot-tabs>

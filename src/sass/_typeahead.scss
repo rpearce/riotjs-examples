@@ -1,0 +1,37 @@
+riot-typeahead {
+  display: block;
+}
+.typeahead {
+  position: relative;
+}
+.typeahead__input {
+  display: block;
+  width: 100%;
+  padding: 10px 8px;
+  outline: 0;
+  font-size: 1rem;
+  border: 1px solid #C2C2C2;
+  &:focus {
+    border: 1px solid $body-color;
+  }
+}
+.typeahead__results {
+  display: none;
+  position: absolute;
+  top: 50px;
+  width: 100%;
+  color: #FFF;
+  &.is-active {
+    display: block;
+  }
+  > li {
+    padding: 15px 8px;
+    background-color: $body-color;
+    &:last-of-type {
+      border-radius: 0 0 15px 15px;
+    }
+    &:hover, &.is-highlighted {
+      background-color: lighten($body-color, 20%)
+    }
+  }
+}
